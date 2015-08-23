@@ -41,24 +41,8 @@ p {
    margin-bottom: 99;
   color: #777;
 }
-          footer{
-            padding-top:10px; 
-            /*元素居中*/
-            text-align: center;  
 
-            /*background*/-color: #e7e7e7;
-          }
 
-          .footer-links {
-            padding: 10px 0 25px 0;
-          }
-          .footer-links li {
-            display: inline;
-            padding: 0 2px;
-          }
-         /* .footer-links li:first-child {
-            padding-left: 0;
-          }*/
 
 
 #singletitle {

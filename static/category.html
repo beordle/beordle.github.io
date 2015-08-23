@@ -9,7 +9,10 @@
       {% endfor %}
     </dl>
   </div>
-  <footer>
+
+</article>
+
+<footer>
   <div id="paginator">
   {%if has_pre%}
         <a class="button_accent" href="{{pre_url}}" >&laquo;</a>
@@ -18,7 +21,5 @@
       <a class="button_accent" href="{{next_url}}" >Next &raquo;</a>
   {%endif%}
   </div>
-  </footer>
-</article>
-
+</footer>
 {% endblock %}
