@@ -1,33 +1,15 @@
 {% extends "framework.html" %}
 {% block category %}
-<div class="container" id="main">
-
-    <div class="row">
-
-        <div id="content" class="col-md-10 col-md-offset-1" >
-
-
-          {%for p in posts%}
-<div class="row archive_box">
-
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="{{p.url}}"> 
-        {{p.title}}
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> {{p.date.format('YYYY-MM-DD') }}</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-          {%endfor%}    
-
-
-
-<div class="pager">
+<article>
+  <div class="article_text">
+    <dl>
+      {%for p in posts%}
+      <dt>{{ p.date.format('YYYY-MM-DD')  }}</dt>
+      <dd><a href="{{ p.url }}">{{ p.title }}</a></dd>
+      {% endfor %}
+    </dl>
+  </div>
+  <div class="pager">
   {%if has_pre%}
   <li class="pull-left"><a href="{{pre_url}}" >&laquo;</a></li>
   {%endif%}
@@ -35,10 +17,6 @@
   <li class="pull-right"><a href="{{next_url}}" >Next &raquo;</a></li>
   {%endif%}
 </div>
+</article>
 
-
-
-        </div>
-  </div><!--/.row-->
-</div><!--/.container-->
 {% endblock %}

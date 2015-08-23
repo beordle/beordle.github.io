@@ -8,12 +8,19 @@ from jinja2 import Environment, PackageLoader
 
 SRC='content'
 OUTPUT='.'
-POSTS_NUM=15
-debug=False
+POSTS_NUM=10
+debug=True
+
+#Pelican兼容
+AUTHOR=u'Beordle'
+INTRO=u'</br>这里隐藏了</br>许多可能有用的东西喔</br>基于知识共享协议'
 if debug:
-    static_url='/Volumes/HDD/git/blog/static'
+    base_url='/Volumes/HDD/git/blog'
 else:
-    static_url='/static'
+    base_url=''
+
+static_url=base_url+'/static'
+
 env = Environment(loader=PackageLoader('app', 'static'))
 
 def lazy_cached_load(name):
@@ -36,9 +43,9 @@ for i in range(len(all_posts)/POSTS_NUM+1):
     cur_url=("index-%d.html" %(i+1))
     next_url=("index-%d.html" %(i+2))
     
-    if i==2:
+    if i+1==2:
         pre_url=("index.html")
-    if i==1:
+    if i+1==1:
         cur_url=("index.html")
 
     if not i+1==1:
