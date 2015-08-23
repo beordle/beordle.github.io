@@ -32,7 +32,10 @@ for i in range(len(all_posts)/POSTS_NUM+1):
     has_pre= not i==0
 
     output=Path(OUTPUT)
-
+    if i==2:
+        pre_url=("index.html")
+    if i==1:
+        cur_url=("index.html")
     pre_url=("index-%d.html" %(i))
     cur_url=("index-%d.html" %(i+1))
     next_url=("index-%d.html" %(i+2))
