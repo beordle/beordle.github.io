@@ -9,14 +9,15 @@
       {% endfor %}
     </dl>
   </div>
-  <div class="pager">
+  <div id="paginator">
   {%if has_pre%}
-  <li class="pull-left"><a href="{{pre_url}}" >&laquo;</a></li>
+        <a class="button_accent" href="{{pre_url}}" >&laquo;</a>
   {%endif%}
   {%if has_next%}
-  <li class="pull-right"><a href="{{next_url}}" >Next &raquo;</a></li>
+      <a class="button_accent" href="{{next_url}}" >Next &raquo;</a>
   {%endif%}
-</div>
+  </div>
+
 </article>
 
 {% endblock %}
