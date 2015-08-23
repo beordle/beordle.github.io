@@ -11,7 +11,7 @@ OUTPUT='.'
 POSTS_NUM=15
 debug=False
 if debug:
-    statc_url='/Volumes/HDD/git/blog/static'
+    static_url='/Volumes/HDD/git/blog/static'
 else:
     static_url='/static'
 env = Environment(loader=PackageLoader('app', 'static'))
