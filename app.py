@@ -9,7 +9,7 @@ from jinja2 import Environment, PackageLoader
 SRC='content'
 OUTPUT='.'
 POSTS_NUM=20
-debug=False
+debug=True
 
 #Pelican兼容
 AUTHOR=u'Beordle'
