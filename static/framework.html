@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kinton</title>
+
+
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src ="http://libs.baidu.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="http://libs.baidu.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script type='text/javascript' src='/static/jquery.pjax.js'></script>
+<script type="text/javascript" src="/static/toc.js"></script>
+<script type="text/javascript" src="http://youbbs.sinaapp.com/static/highligt/highlight.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/aimly.css" />
+<link rel="stylesheet" type="text/css" href="/static/zenburn.css" />
+
+<link rel="stylesheet" type="text/css" href="http://youbbs.sinaapp.com/static/highligt/sunburst.min.css" />
+<script>hljs.initHighlightingOnLoad();</script>
+
+</head>  
+
+<body  data-spy="scroll" data-target=".scrollspy">
+        <style>
+
+
+#toc {
+
+}
+
+#toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#toc li {
+    padding: 5px 10px;
+}
+
+#toc a {
+
+    text-decoration: none;
+    display: block;
+}
+
+#toc .toc-h2 {
+    padding-left: 10px;
+}
+
+#toc .toc-h3 {
+    padding-left: 20px;
+}
+
+#toc .toc-active {
+    background: #336699;
+    box-shadow: inset -5px 0px 10px -5px #000;
+}
+
+    </style>
+
+<header>
+        <div id="body-header">
+            <div class="navbar">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"><i class="fa fa-cog fa-1x"></i></span>
+                        </button>
+                        <a class="navbar-brand" href="/">
+                        <img style="width:30px;margin-right:8px;margin-bottom:0px;" src="http://7u2ns8.com1.z0.glb.clouddn.com/jnu.png"/><span>Kinton@JNU
+                        </span></a>
+                    </div>
+                    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="/my_projects.html" title="my projects">
+                                <i class="icon-rocket"></i>项目</a>
+                            </li>
+                        <!-- category dropdown list -->
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-folder fa-fw"></i>分类<b class="caret"></b>
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a href="http://blog.atime.me/code/index.html">
+                                      <i class="icon-code"></i>代码
+                                      (8)</a></li>
+                               <li><a href="http://blog.atime.me/collection/index.html">
+                                      <i class="icon-briefcase"></i>搜藏
+                                      (28)</a></li>
+                               <li><a href="http://blog.atime.me/essay/index.html">
+                                      <i class="icon-leaf"></i>随笔
+                                      (10)</a></li>
+                               <li><a href="http://blog.atime.me/life/index.html">
+                                      <i class="icon-coffee"></i>日常
+                                      (22)</a></li>
+                               <li><a href="http://blog.atime.me/note/index.html">
+                                      <i class="icon-book"></i>笔记
+                                      (105)</a></li>
+                               <li><a href="http://blog.atime.me/research/index.html">
+                                      <i class="icon-flask"></i>研究
+                                      (7)</a></li>
+                           </ul>
+                        </li>
+                        <!--  self defined dropdown list -->
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <i class="icon-archive"></i>存档<b class="caret"></b>
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a href="/archives.html" title="archives order by publish time">
+                                 <i class="icon-calendar"></i>存档 (按发布时间)</a>
+                               </li>
+                               <li><a href="/archives_updatedate.html" title="archives order by modify time">
+                                 <i class="icon-pencil"></i>存档 (按修改时间)</a>
+                               </li>
+                           </ul>
+                        </li>
+                        </ul>
+                        
+                        <!-- right nav bar -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/about.html" title="about me">
+                                <i class="fa fa-cog fa-fw"></i>关于</a>
+                            </li>
+                       </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+</header>
+
+
+
+   
+
+
+{% block category %}
+{% endblock %}
+
+
+
+      <footer>
+        
+        <!--p>Created and designed by <a href="http://beordle.com/"> Konton</a></p-->
+      </footer>
+
+<script>
+
+      var duoshuoQuery = {short_name:"zhangjindong"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = false;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+
+function pajx_loadDuoshuo(){
+
+  var dus=$(".ds-thread");
+  if($(dus).length==1){
+    var el = document.createElement('div');
+    el.setAttribute('data-thread-key',$(dus).attr("data-thread-key"));//必选参数
+    el.setAttribute('data-url',$(dus).attr("data-url"));
+    DUOSHUO.EmbedThread(el);
+    $(dus).html(el);
+    
+  }
+}
+
+$(document).ready(function(){
+  //alert($().pjax);
+  $(document).pjax("a", "#main");
+  //$.pjax.enable();
+  hljs.initHighlightingOnLoad();
+  $('#toc').toc();
+
+});
+
+ 
+$(document).on('pjax:complete', function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+});
+  $('#toc').toc();
+    pajx_loadDuoshuo();
+})
+</script>
+  </body>
+</html>
+

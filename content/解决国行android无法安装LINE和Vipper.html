@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kinton</title>
+
+
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src ="http://libs.baidu.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="http://libs.baidu.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script type='text/javascript' src='/static/jquery.pjax.js'></script>
+<script type="text/javascript" src="/static/toc.js"></script>
+<script type="text/javascript" src="http://youbbs.sinaapp.com/static/highligt/highlight.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/aimly.css" />
+<link rel="stylesheet" type="text/css" href="/static/zenburn.css" />
+
+<link rel="stylesheet" type="text/css" href="http://youbbs.sinaapp.com/static/highligt/sunburst.min.css" />
+<script>hljs.initHighlightingOnLoad();</script>
+
+</head>  
+
+<body  data-spy="scroll" data-target=".scrollspy">
+        <style>
+
+
+#toc {
+
+}
+
+#toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#toc li {
+    padding: 5px 10px;
+}
+
+#toc a {
+
+    text-decoration: none;
+    display: block;
+}
+
+#toc .toc-h2 {
+    padding-left: 10px;
+}
+
+#toc .toc-h3 {
+    padding-left: 20px;
+}
+
+#toc .toc-active {
+    background: #336699;
+    box-shadow: inset -5px 0px 10px -5px #000;
+}
+
+    </style>
+
+<header>
+        <div id="body-header">
+            <div class="navbar">
+                <div class="col-md-12">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"><i class="fa fa-cog fa-1x"></i></span>
+                        </button>
+                        <a class="navbar-brand" href="/">
+                        <img style="width:30px;margin-right:8px;margin-bottom:0px;" src="http://7u2ns8.com1.z0.glb.clouddn.com/jnu.png"/><span>Kinton@JNU
+                        </span></a>
+                    </div>
+                    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="/my_projects.html" title="my projects">
+                                <i class="icon-rocket"></i>项目</a>
+                            </li>
+                        <!-- category dropdown list -->
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-folder fa-fw"></i>分类<b class="caret"></b>
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a href="http://blog.atime.me/code/index.html">
+                                      <i class="icon-code"></i>代码
+                                      (8)</a></li>
+                               <li><a href="http://blog.atime.me/collection/index.html">
+                                      <i class="icon-briefcase"></i>搜藏
+                                      (28)</a></li>
+                               <li><a href="http://blog.atime.me/essay/index.html">
+                                      <i class="icon-leaf"></i>随笔
+                                      (10)</a></li>
+                               <li><a href="http://blog.atime.me/life/index.html">
+                                      <i class="icon-coffee"></i>日常
+                                      (22)</a></li>
+                               <li><a href="http://blog.atime.me/note/index.html">
+                                      <i class="icon-book"></i>笔记
+                                      (105)</a></li>
+                               <li><a href="http://blog.atime.me/research/index.html">
+                                      <i class="icon-flask"></i>研究
+                                      (7)</a></li>
+                           </ul>
+                        </li>
+                        <!--  self defined dropdown list -->
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                               <i class="icon-archive"></i>存档<b class="caret"></b>
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a href="/archives.html" title="archives order by publish time">
+                                 <i class="icon-calendar"></i>存档 (按发布时间)</a>
+                               </li>
+                               <li><a href="/archives_updatedate.html" title="archives order by modify time">
+                                 <i class="icon-pencil"></i>存档 (按修改时间)</a>
+                               </li>
+                           </ul>
+                        </li>
+                        </ul>
+                        
+                        <!-- right nav bar -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/about.html" title="about me">
+                                <i class="fa fa-cog fa-fw"></i>关于</a>
+                            </li>
+                       </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+</header>
+
+
+
+   
+
+
+
+
+
+<div class="row"  id="main" >
+<div id="singletitle"><p>解决国行android无法安装LINE和Vipper</p></div>
+            <div id="content" class="col-md-offset-1 col-md-9"   >
+
+                        <div class="body-wrap">
+                                    <div  class="entry-content">
+
+                                                
+                                                    <p>本文自动转发自我的博客: http://beordle.sinaapp.com/?p=36 最近我的国行MOTO ME863要安装这LINE和Vipper两个应用总是显示addons属性不支持。在网上找了一下，终于让我找到了解决方法如有腾讯应用助手for Android会显示“您的机器不支持Add-on属性”，如果直接用手机装的话就显示：”应用程序未安装“，91和豌豆荚也是显示”安装失败“，让人非常恼火，其实主要原因是阉割了google服务，需要加这三个文件： 地图程序框架：/system/framework/com.google.android.maps.jar； 地图权限：/system/etc/permissi<strong>/com.google.android.maps.xml； 网络定位程序:/data/app_s/NetworkLocation.apk。 你只需将上述文件放到手机中的相应位置，重启手机就好了。本人亲测可用。 方法： 首先机器要ROOT，然后用RE管理器，把要复制的文件复制到相应的位置，最后改权限和其他一样644，就是竖着3趟，左边全选，中间最上面选上，右边全空。接着重启机器就好了，重启后你会发现如viber，endomondo，line等软件都可以安装了。 不会修改权限？不是吧，自己查查看。 具体就是把这三个文件。 /system/framework/com.google.android.maps.jar； /system/etc/permissi</strong>/com.google.android.maps.xml； /data/app_s/NetworkLocation.apk。 放到相应位置，没有文件夹的，请自己建立 谷歌服务中的位置服务下载地址 Hi，推荐文件给你 "谷歌位置服务.rar" http://vdisk.weibo.com/s/3hfYs 原帖是 http://bbs.gfan.com/android-3857773-1-1.html 。不过，由于RE管理器的单栏显示特性，使这个工作在设备上十分难于完成。在这我还是推荐使用 电脑版Root Explorer 和 Total Commander for android. -------------------- 查看原文: http://beordle.sinaapp.com/?p=36</p>
+                                                <div class="ds-thread" data-thread-key="123" data-title="123" data-url="http://beordle.com/ff6476"></div>
+                                    </div>
+                        </div>
+            </div>
+
+                          <div  class="col-md-2 ">
+                                 <div id="toc" class="affix"></div>
+                          </div>
+
+
+ </div>
+
+
+    <script type="text/javascript">
+
+      var duoshuoQuery = {short_name:"zhangjindong"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = false;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+        <script>
+
+
+    </script>
+
+
+
+
+
+      <footer>
+        
+        <!--p>Created and designed by <a href="http://beordle.com/"> Konton</a></p-->
+      </footer>
+
+<script>
+
+      var duoshuoQuery = {short_name:"zhangjindong"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = false;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+
+function pajx_loadDuoshuo(){
+
+  var dus=$(".ds-thread");
+  if($(dus).length==1){
+    var el = document.createElement('div');
+    el.setAttribute('data-thread-key',$(dus).attr("data-thread-key"));//必选参数
+    el.setAttribute('data-url',$(dus).attr("data-url"));
+    DUOSHUO.EmbedThread(el);
+    $(dus).html(el);
+    
+  }
+}
+
+$(document).ready(function(){
+  //alert($().pjax);
+  $(document).pjax("a", "#main");
+  //$.pjax.enable();
+  hljs.initHighlightingOnLoad();
+  $('#toc').toc();
+
+});
+
+ 
+$(document).on('pjax:complete', function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+});
+  $('#toc').toc();
+    pajx_loadDuoshuo();
+})
+</script>
+  </body>
+</html>
