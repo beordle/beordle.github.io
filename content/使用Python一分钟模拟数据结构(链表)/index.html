@@ -106,141 +106,80 @@
 
 
 
-<div class="container" id="main">
-
-    <div class="row">
-
-        <div id="content" class="col-md-10 col-md-offset-1" >
 
 
-          
-<div class="row archive_box">
+<div class="row"  id="main" >
+<div id="singletitle"><p>使用Python一分钟模拟数据结构(链表)</p></div>
+            <div id="content" class="col-md-offset-1 col-md-9"   >
 
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/离开天津，才明白。/index.html"> 
-        离开天津，才明白。
-        
-        </a>
-    </div>
+                        <div class="body-wrap">
+                                    <div  class="entry-content">
 
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2012-09-25</span>
-        <span class="archive_author"></span>
-    </div>
+                                                
+                                                    <p>做数据结构题时，有一个算法是倒序链表。本来想出来了 可还是有点晕乎。我为了证明,写了如下的代码。</p>
+<pre><code>
+class Node():
+  next=None
+  def __init__(self,name):
+      self.name=name
 
-</div>
-          
-<div class="row archive_box">
+a=Node('A')
+b=Node('B')
+c=Node('C')
+d=Node('D')
+e=Node('E')
+a.next=b
+b.next=c
+c.next=d
+d.next=e
 
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/最近的想法/index.html"> 
-        最近的想法
-        
-        </a>
-    </div>
+HEAD=a
+p=HEAD
+p=p.next
+HEAD.next=None
+while p:
+    q=p
+    p=p.next
+    q.next=HEAD.next
+    HEAD.next=q
 
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2010-05-26</span>
-        <span class="archive_author"></span>
-    </div>
+print HEAD.name
+while HEAD.next!=None:
+  HEAD=HEAD.next
+  print  HEAD.namePython
+</code></pre>
 
-</div>
-          
-<div class="row archive_box">
+<p>结果确实可证。而且C语言到Python转化也十分方便。。基本就是去掉; 然后-&gt;变点。NULL变None。。</p>
+                                                <div class="ds-thread" data-thread-key="123" data-title="123" data-url="http://beordle.com/ff6476"></div>
+                                    </div>
+                        </div>
+            </div>
 
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/对暨南大学教务处的验证码进行机器识别/index.html"> 
-        对暨南大学教务处的验证码进行机器识别
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2013-03-14</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-          
-<div class="row archive_box">
-
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/头绪/index.html"> 
-        头绪
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2014-12-07</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-          
-<div class="row archive_box">
-
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/今天对jnufm服务器所做一些事务的记录/index.html"> 
-        今天对jnufm服务器所做一些事务的记录
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2013-08-24</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-          
-<div class="row archive_box">
-
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/河源之行游记/index.html"> 
-        河源之行游记
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2013-04-23</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-          
-<div class="row archive_box">
-
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/说说暨大社联招新所遇问题的想法/index.html"> 
-        说说暨大社联招新所遇问题的想法
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2013-03-15</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-              
+                          <div  class="col-md-2 ">
+                                 <div id="toc" class="affix"></div>
+                          </div>
 
 
-
-<div class="pager">
-  
-  <li class="pull-left"><a href="index-3.html" >&laquo;</a></li>
-  
-  
-</div>
+ </div>
 
 
+    <script type="text/javascript">
 
-        </div>
-  </div><!--/.row-->
-</div><!--/.container-->
+      var duoshuoQuery = {short_name:"zhangjindong"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = false;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+        <script>
+
+
+    </script>
+
 
 
 

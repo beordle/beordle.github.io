@@ -106,141 +106,60 @@
 
 
 
-<div class="container" id="main">
-
-    <div class="row">
-
-        <div id="content" class="col-md-10 col-md-offset-1" >
 
 
-          
-<div class="row archive_box">
+<div class="row"  id="main" >
+<div id="singletitle"><p>新一年的技术记录</p></div>
+            <div id="content" class="col-md-offset-1 col-md-9"   >
 
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/离开天津，才明白。/index.html"> 
-        离开天津，才明白。
-        
-        </a>
-    </div>
+                        <div class="body-wrap">
+                                    <div  class="entry-content">
 
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2012-09-25</span>
-        <span class="archive_author"></span>
-    </div>
+                                                
+                                                    <h1>用户数据读写</h1>
+<p>“用户”这种类型的数据。大都是读多写少。 而且无需支持事务。</p>
+<ul>
+<li>支持 用户验证</li>
+<li>支持 增加用户</li>
+<li>支持 修改密码</li>
+</ul>
+<p>访问一般只通过username 即是说索引只需要有key即可...</p>
+<h1>架构</h1>
+<p>为了支持强大的并发，使用Redis</p>
+<p>json-RPC JSON远程过程调用，跨平台，跨语言支持。。。</p>
+<p>Nginx负载均衡(目前的700mhz+512MB处理器，用了就蛋疼。。。要IntelXeon至强处理器!)</p>
+<p>目前测试结果为我的windows每秒处理500-700请求。。基本满足需要。。。。hy想去</p>
+<p><em>整理为 markdown 格式时,我愣了一下,嗯..此处应为河源.</em></p>
+                                                <div class="ds-thread" data-thread-key="123" data-title="123" data-url="http://beordle.com/ff6476"></div>
+                                    </div>
+                        </div>
+            </div>
 
-</div>
-          
-<div class="row archive_box">
-
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/最近的想法/index.html"> 
-        最近的想法
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2010-05-26</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-          
-<div class="row archive_box">
-
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/对暨南大学教务处的验证码进行机器识别/index.html"> 
-        对暨南大学教务处的验证码进行机器识别
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2013-03-14</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-          
-<div class="row archive_box">
-
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/头绪/index.html"> 
-        头绪
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2014-12-07</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-          
-<div class="row archive_box">
-
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/今天对jnufm服务器所做一些事务的记录/index.html"> 
-        今天对jnufm服务器所做一些事务的记录
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2013-08-24</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-          
-<div class="row archive_box">
-
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/河源之行游记/index.html"> 
-        河源之行游记
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2013-04-23</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-          
-<div class="row archive_box">
-
-    <div class="archive_title pull-left" >
-        <a class="category_title" href="content/说说暨大社联招新所遇问题的想法/index.html"> 
-        说说暨大社联招新所遇问题的想法
-        
-        </a>
-    </div>
-
-    <div class="archive_meta pull-right">
-        <span class="archive_date"><i class="fa fa-calendar fa-fw"></i> 2013-03-15</span>
-        <span class="archive_author"></span>
-    </div>
-
-</div>
-              
+                          <div  class="col-md-2 ">
+                                 <div id="toc" class="affix"></div>
+                          </div>
 
 
-
-<div class="pager">
-  
-  <li class="pull-left"><a href="index-3.html" >&laquo;</a></li>
-  
-  
-</div>
+ </div>
 
 
+    <script type="text/javascript">
 
-        </div>
-  </div><!--/.row-->
-</div><!--/.container-->
+      var duoshuoQuery = {short_name:"zhangjindong"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = false;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+        <script>
+
+
+    </script>
+
 
 
 

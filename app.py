@@ -9,11 +9,14 @@ from jinja2 import Environment, PackageLoader
 SRC='content'
 OUTPUT='.'
 POSTS_NUM=15
-
+debug=False
+if debug:
+    statc_url='/Volumes/HDD/git/blog/static'
+else:
+    static_url='/static'
 env = Environment(loader=PackageLoader('app', 'static'))
 
 def lazy_cached_load(name):
-    print ('initing %s..'% name)
     a=Path(name)
     return a.open().read()
 
@@ -25,14 +28,20 @@ def render(name,**args):
 all_posts=Sandboxs(path=SRC).all().values()
 for i in range(len(all_posts)/POSTS_NUM+1):
     posts=all_posts[i * POSTS_NUM:i * POSTS_NUM + POSTS_NUM]
-    has_more= i * POSTS_NUM+POSTS_NUM < len(all_posts)
-    print posts
+    has_next= i * POSTS_NUM+POSTS_NUM < len(all_posts)
+    has_pre= not i==0
+
     output=Path(OUTPUT)
+
+    pre_url=("index-%d.html" %(i))
+    cur_url=("index-%d.html" %(i+1))
+    next_url=("index-%d.html" %(i+2))
     if not i+1==1:
-        f=output / ("index-%d.html" %(i+1))
+        f=output / cur_url
     else:
-        f=output / "index.html"
+        f=output / cur_url
+
     f.open('wb').write(render('category.html', **locals()).encode('utf-8'))
 for sandbox in all_posts:
-    f=output / 'content' / (sandbox.title.encode('utf-8')+'.html')
+    f=sandbox.path / 'index.html'
     f.open('wb').write(render('single.html', **locals()).encode('utf-8'))

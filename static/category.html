@@ -11,7 +11,7 @@
 <div class="row archive_box">
 
     <div class="archive_title pull-left" >
-        <a class="category_title" href="/{{p.key}}"> 
+        <a class="category_title" href="{{p.url}}"> 
         {{p.title}}
         
         </a>
@@ -28,11 +28,11 @@
 
 
 <div class="pager">
-  {%if not i==0%}
-  <li class="pull-left"><a href="/?p={{i+1-1}}" >&laquo;</a></li>
+  {%if has_pre%}
+  <li class="pull-left"><a href="{{pre_url}}" >&laquo;</a></li>
   {%endif%}
-  {%if has_more%}
-  <li class="pull-right"><a href="/?p={{i+1+1}}" >Next &raquo;</a></li>
+  {%if has_next%}
+  <li class="pull-right"><a href="{{next_url}}" >Next &raquo;</a></li>
   {%endif%}
 </div>
 

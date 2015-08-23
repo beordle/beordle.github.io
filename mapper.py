@@ -17,6 +17,7 @@ def _Unicode(x):
 class Sandbox():
     def __init__(self,i):
             self.path=i
+            self.url= self.path.as_posix().decode('utf-8') + '/index.html'
             index= i / 'index.md'
             if not (index).exists():
                 assert 1==0,'not a vaild path'
