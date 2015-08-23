@@ -75,7 +75,7 @@ class Sandbox():
 
 class Sandboxs():
     def __init__(self,**w):
-        self.sandboxs=[x for x in Path(w['path']).iterdir() if x.is_dir()]
+        self.sandboxs=[x for x in Path(w['path']).glob("**/*") if x.is_dir() and (x / 'index.md').is_file()]
     def all(self):
         self.map={i.key:i for i in [Sandbox(x) for x in self.sandboxs] }
         return self.map
