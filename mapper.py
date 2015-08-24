@@ -23,11 +23,8 @@ class Sandbox():
                 assert 1==0,'not a vaild path'
             with index.open(encoding='utf-8') as f:
                 content=f.read()
-
                 print index
                 self.solve_index_markdown(content)
-    def hash(self):
-        return hashlib.md5( _Unicode(self.path.parts[-1]).encode('utf-8') ).hexdigest()
     def solve_index_markdown(self,content):
         temp=content.split('---\n')
         if len(temp)==1:
@@ -54,37 +51,22 @@ class Sandbox():
                 self.date=arrow.get(self.meta['date'], 'YYYY-MM-DD-HH-mm') 
             except:
                 self.date=arrow.get('2000-01-01-00-00-00', 'YYYY-MM-DD-HH-mm') 
-        self.key=_Unicode(self.path.parts[-1])
         if 'title' in all_meta_set:
                 self.title=self.meta['title']
         else:
                 self.title=self.key
 
-    def url_for(self,name):
-        url=self.path / name
-        if url.exists():
-            return url
-        else:
-            return None
-    def buffer_for(self,name):
-        _=self.url_for(name)
-        if _:
-            return _.open('br').read()
-        else:
-            return None
 
-def newer(a,b):
-    return cmp(a.date,a.date)
 
 class Sandboxs():
     def __init__(self,**w):
         self.sandboxs=[x for x in Path(w['path']).glob("**/*") if x.is_dir() and (x / 'index.md').is_file()]
     def all(self):
-        self.map={i.key:i for i in [Sandbox(x) for x in self.sandboxs] }
-        return self.map
+        return [Sandbox(x) for x in self.sandboxs]
 
     def sort(self):
-        f=self.all().values()
+        newer=lambda a,b:-cmp(a.date,b.date)
+        f=self.all()
         f.sort(cmp=newer)
         for i in f:
             yield i
