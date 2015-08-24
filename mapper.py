@@ -73,12 +73,22 @@ class Sandbox():
         else:
             return None
 
+def newer(a,b):
+    return cmp(a.date,a.date)
+
 class Sandboxs():
     def __init__(self,**w):
         self.sandboxs=[x for x in Path(w['path']).glob("**/*") if x.is_dir() and (x / 'index.md').is_file()]
     def all(self):
         self.map={i.key:i for i in [Sandbox(x) for x in self.sandboxs] }
         return self.map
+
+    def sort(self):
+        f=self.all().values().sort(cmp=newer)
+        if f:
+            for i in f:
+                yield i
+
 if __name__=="__main__":
     docs= Sandboxs(timeout=180).all()
     for i in docs.values():

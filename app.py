@@ -32,7 +32,7 @@ def render(name,**args):
     return template.render(**args)
 
 
-all_posts=Sandboxs(path=SRC).all().values()
+all_posts=list(Sandboxs(path=SRC).sort())
 for i in range(len(all_posts)/POSTS_NUM+1):
     posts=all_posts[i * POSTS_NUM:i * POSTS_NUM + POSTS_NUM]
     has_next= i * POSTS_NUM+POSTS_NUM < len(all_posts)
