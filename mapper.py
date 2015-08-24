@@ -84,10 +84,10 @@ class Sandboxs():
         return self.map
 
     def sort(self):
-        f=self.all().values().sort(cmp=newer)
-        if f:
-            for i in f:
-                yield i
+        f=self.all().values()
+        f.sort(cmp=newer)
+        for i in f:
+            yield i
 
 if __name__=="__main__":
     docs= Sandboxs(timeout=180).all()
