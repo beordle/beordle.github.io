@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kinton</title>
+
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+<link rel="stylesheet" type="text/css" href="/static/aimly.css">
+<link rel="stylesheet" type="text/css" href="/static/pygments.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script type='text/javascript' src='/static/jquery.pjax.js'></script>
+<script type="text/javascript" src="/static/toc.js"></script>
+<script type="text/javascript" src="http://youbbs.sinaapp.com/static/highligt/highlight.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/static/aimly.css" />
+<link rel="stylesheet" type="text/css" href="/static/zenburn.css" />
+
+<link rel="stylesheet" type="text/css" href="http://youbbs.sinaapp.com/static/highligt/sunburst.min.css" />
+<script>hljs.initHighlightingOnLoad();</script>
+
+</head>  
+
+<body  data-spy="scroll" data-target=".scrollspy">
+        <style>
+
+
+#toc {
+
+}
+
+#toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#toc li {
+    padding: 5px 10px;
+}
+
+#toc a {
+
+    text-decoration: none;
+    display: block;
+}
+
+#toc .toc-h2 {
+    padding-left: 10px;
+}
+
+#toc .toc-h3 {
+    padding-left: 20px;
+}
+
+#toc .toc-active {
+    background: #336699;
+    box-shadow: inset -5px 0px 10px -5px #000;
+}
+
+    </style>
+
+  <aside>
+    <div id="user_meta">
+      <a href="">
+        
+        <img src="/static/logo.png" alt="logo">
+        
+      </a>
+      <h2><a href="">Beordle</a></h2>
+      <p></br>这里隐藏了</br>许多可能有用的东西喔</br>基于知识共享协议</p>
+
+<!-- 多说最新评论 start -->
+  <div class="ds-recent-comments" data-num-items="3" data-show-avatars="1" data-show-time="0" data-show-title="0" data-show-admin="0" data-excerpt-length="20"></div>
+<!-- 多说最新评论 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"zhangjindong"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+
+      
+    </div>
+  </aside>
+
+  <main>
+    <!--header>
+      <p>
+      <a href="ff">Index</a> &brvbar; <a href="ff/archives.html">Archives</a>
+      </p>
+    </header-->
+
+
+
+
+<div class="row"  id="main" >
+<div id="singletitle"><p>解决国行android无法安装LINE和Vipper</p></div>
+            <div id="content" class="col-md-offset-1 col-md-9"   >
+
+                        <div class="body-wrap">
+                                    <div  class="entry-content">
+
+                                                
+                                                    <p>最近我的国行 MOTO ME863 要安装这 LINE 和 Vipper 两个应用,总是显示addons属性不支持。</p>
+<p>在网上找了一下，终于让我找到了解决方法.</p>
+<p>如有腾讯应用助手for Android会显示“您的机器不支持Add-on属性”，如果直接用手机装的话就显示：”应用程序未安装“，91和豌豆荚也是显示”安装失败“，让人非常恼火，其实主要原因是阉割了google服务，需要加这三个文件： </p>
+<ul>
+<li>地图程序框架：/system/framework/com.google.android.maps.jar； </li>
+<li>地图权限：/system/etc/permission/com.google.android.maps.xml；</li>
+<li>网络定位程序:/data/app_s/NetworkLocation.apk</li>
+</ul>
+<p>你只需将上述文件放到手机中的相应位置，重启手机就好了。本人亲测可用。 </p>
+<p>方法： 
+    首先机器要ROOT，然后用RE管理器，把要复制的文件复制到相应的位置，最后改权限和其他一样644，就是竖着3趟，左边全选，中间最上面选上，右边全空。接着重启机器就好了，重启后你会发现如viber，endomondo，line等软件都可以安装了。 不会修改权限？不是吧，自己查查看。 </p>
+<p>具体就是把这三个文件。 
+/system/framework/com.google.android.maps.jar；
+/system/etc/permission/com.google.android.maps.xml； 
+/data/app_s/NetworkLocation.apk。</p>
+<p>放到相应位置，没有文件夹的，请自己建立.</p>
+<p>谷歌服务中的位置服务下载地址 </p>
+<p>http://vdisk.weibo.com/s/3hfYs 原帖是 http://bbs.gfan.com/android-3857773-1-1.html 。</p>
+<p>不过，由于RE管理器的单栏显示特性，使这个工作在设备上十分难于完成。
+在这我还是推荐使用 电脑版Root Explorer 和 Total Commander for android</p>
+                                                <div class="ds-thread" data-thread-key="123" data-title="123" data-url="http://beordle.com/ff6476"></div>
+                                    </div>
+                        </div>
+            </div>
+
+                          <div  class="col-md-2 ">
+                                 <div id="toc" class="affix"></div>
+                          </div>
+
+
+ </div>
+
+
+    <script type="text/javascript">
+
+      var duoshuoQuery = {short_name:"zhangjindong"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = false;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+        <script>
+
+
+    </script>
+
+
+
+
+    <div id="ending_message">
+      <p>&copy; Beordle. Built using Aimly. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. Member of the <a href="#">COPA</a>.</p>
+    </div>
+
+
+
+<script>
+
+      var duoshuoQuery = {short_name:"zhangjindong"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = false;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+
+function pajx_loadDuoshuo(){
+
+  var dus=$(".ds-thread");
+  if($(dus).length==1){
+    var el = document.createElement('div');
+    el.setAttribute('data-thread-key',$(dus).attr("data-thread-key"));//必选参数
+    el.setAttribute('data-url',$(dus).attr("data-url"));
+    DUOSHUO.EmbedThread(el);
+    $(dus).html(el);
+    
+  }
+}
+
+$(document).ready(function(){
+  //alert($().pjax);
+  $(document).pjax("a", "#main");
+  //$.pjax.enable();
+  hljs.initHighlightingOnLoad();
+  $('#toc').toc();
+
+});
+
+ 
+$(document).on('pjax:complete', function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+});
+  $('#toc').toc();
+    pajx_loadDuoshuo();
+})
+</script>
+  </body>
+</html>
