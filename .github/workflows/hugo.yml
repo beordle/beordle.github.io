@@ -55,7 +55,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "https://beordle.github.io/" 
+            --baseURL "https://gvisor.com/" 
           #${{ steps.pages.outputs.base_url }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
