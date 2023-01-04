@@ -1,0 +1,45 @@
+{% extends "framework.html" %}
+{% block category %}
+
+
+<div class="row"  id="main" >
+<div id="singletitle"><p>{{sandbox.title}}</p></div>
+            <div id="content" class="col-md-offset-1 col-md-9"   >
+
+                        <div class="body-wrap">
+                                    <div  class="entry-content">
+
+                                                
+                                                    {{sandbox.html|safe}}
+                                                <div class="ds-thread" data-thread-key="123" data-title="123" data-url="http://beordle.com/ff6476"></div>
+                                    </div>
+                        </div>
+            </div>
+
+                          <div  class="col-md-2 ">
+                                 <div id="toc" class="affix"></div>
+                          </div>
+
+
+ </div>
+
+
+    <script type="text/javascript">
+
+      var duoshuoQuery = {short_name:"zhangjindong"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = false;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+        <script>
+
+
+    </script>
+
+{% endblock%}
+

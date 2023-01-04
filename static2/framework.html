@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kinton</title>
+
+<link rel="stylesheet" type="text/css" href="{{static_url}}/style.css">
+<link rel="stylesheet" type="text/css" href="{{static_url}}/aimly.css">
+<link rel="stylesheet" type="text/css" href="{{static_url}}/pygments.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script type='text/javascript' src='/static/jquery.pjax.js'></script>
+<script type="text/javascript" src="/static/toc.js"></script>
+<script type="text/javascript" src="http://youbbs.sinaapp.com/static/highligt/highlight.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="{{static_url}}/aimly.css" />
+<link rel="stylesheet" type="text/css" href="{{static_url}}/zenburn.css" />
+
+<link rel="stylesheet" type="text/css" href="http://youbbs.sinaapp.com/static/highligt/sunburst.min.css" />
+<script>hljs.initHighlightingOnLoad();</script>
+
+</head>  
+
+<body  data-spy="scroll" data-target=".scrollspy">
+        <style>
+
+
+#toc {
+
+}
+
+#toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#toc li {
+    padding: 5px 10px;
+}
+
+#toc a {
+
+    text-decoration: none;
+    display: block;
+}
+
+#toc .toc-h2 {
+    padding-left: 10px;
+}
+
+#toc .toc-h3 {
+    padding-left: 20px;
+}
+
+#toc .toc-active {
+    background: #336699;
+    box-shadow: inset -5px 0px 10px -5px #000;
+}
+
+    </style>
+
+  <aside>
+    <div id="user_meta">
+      <a href="{{ base_url }}">
+        {% if USER_LOGO_URL %}
+        <img src="{{ USER_LOGO_URL }}" alt="logo">
+        {% else %}
+        <img src="{{ static_url }}/logo.png" alt="logo">
+        {% endif %}
+      </a>
+      <h2><a href="{{ base_url }}">{{ AUTHOR }}</a></h2>
+      <p>{{INTRO}}</p>
+
+<!-- 多说最新评论 start -->
+  <div class="ds-recent-comments" data-num-items="3" data-show-avatars="1" data-show-time="0" data-show-title="0" data-show-admin="0" data-excerpt-length="20"></div>
+<!-- 多说最新评论 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"zhangjindong"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+
+      
+    </div>
+  </aside>
+
+  <main>
+    <!--header>
+      <p>
+      <a href="ff">Index</a> &brvbar; <a href="ff/archives.html">Archives</a>
+      </p>
+    </header-->
+
+{% block category %}
+{% endblock %}
+
+
+    <div id="ending_message">
+      <p>&copy; {{ AUTHOR }}. Built using Aimly. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. Member of the <a href="#">COPA</a>.</p>
+    </div>
+
+
+
+<script>
+
+      var duoshuoQuery = {short_name:"zhangjindong"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = false;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+
+function pajx_loadDuoshuo(){
+
+  var dus=$(".ds-thread");
+  if($(dus).length==1){
+    var el = document.createElement('div');
+    el.setAttribute('data-thread-key',$(dus).attr("data-thread-key"));//必选参数
+    el.setAttribute('data-url',$(dus).attr("data-url"));
+    DUOSHUO.EmbedThread(el);
+    $(dus).html(el);
+    
+  }
+}
+
+$(document).ready(function(){
+  //alert($().pjax);
+  $(document).pjax("a", "#main");
+  //$.pjax.enable();
+  hljs.initHighlightingOnLoad();
+  $('#toc').toc();
+
+});
+
+ 
+$(document).on('pjax:complete', function() {
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+});
+  $('#toc').toc();
+    pajx_loadDuoshuo();
+})
+</script>
+  </body>
+</html>
+
