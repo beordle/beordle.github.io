@@ -1,0 +1,129 @@
+{
+  "main": {
+    "id": "673f8d4e7e57148d",
+    "type": "split",
+    "children": [
+      {
+        "id": "898dd4d3385b8e81",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c802e3688042b3f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/aa.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6ed014d17a498188",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "3f5c37455b8e7e6b",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "22ff7b234b74270e",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "b100d8be44ba950f",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "0fa36eefeb9bb924",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "50d0a07dc0e6a4a1",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f77b765784fcdd59",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "content/posts/aa.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "5f3176c6f7ff3e6b",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "content/posts/aa.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "26eac7ca33c3ebfb",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "content/posts/aa.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "c802e3688042b3f2",
+  "lastOpenFiles": [
+    "README.md",
+    "content/posts/aa.md"
+  ]
+}
