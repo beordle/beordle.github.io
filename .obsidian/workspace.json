@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cb780aaa7e976f72",
+        "id": "89808f4196d1dd44",
         "type": "tabs",
         "children": [
           {
-            "id": "c40a3ce118bcc735",
+            "id": "392c537011db95ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "20570c4ba722edb9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/概率问题的讨论.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/概率问题的讨论.md",
+                "file": "content/posts/计算机时间漫谈.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/概率问题的讨论.md",
+                "file": "content/posts/计算机时间漫谈.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/概率问题的讨论.md"
+                "file": "content/posts/计算机时间漫谈.md"
               }
             }
           }
@@ -157,17 +144,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "20570c4ba722edb9",
+  "active": "392c537011db95ef",
   "lastOpenFiles": [
+    "g.jjpg.jpg",
     "content/posts/计算机时间漫谈.md",
     "content/posts/概率问题的讨论.md",
+    "content/posts/我如何看待 Go.md",
     "content/aa.md",
     "theme/images/icons/reddit.png",
     "theme/images/icons/slideshare.png",
     "theme/images/icons/delicious.png",
     "theme/images/icons/bitbucket.png",
-    "theme/images/icons/aboutme.png",
-    "README.md",
-    "g.jjpg.jpg"
+    "theme/images/icons/aboutme.png"
   ]
 }
