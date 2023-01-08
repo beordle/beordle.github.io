@@ -1,7 +1,7 @@
 baseURL = "http://gvisor.com"
 title = "johndoe"
 theme = "hugo-coder"
-languageCode = "en"
+languageCode = "eni-us"
 defaultContentLanguage = "en"
 paginate = 20
 pygmentsStyle = "bw"
@@ -10,6 +10,11 @@ pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
+theme = "hyde"
+
+[params]
+  description = "Your custom description"
+
 
 [params]
 author = "John Doe"
