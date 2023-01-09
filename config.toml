@@ -10,10 +10,7 @@ pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
-#theme = "hyde"
-
-[params]
-  description = "Your custom description"
+# theme = "hyde"
 
 
 [params]
