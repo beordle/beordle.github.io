@@ -1,7 +1,7 @@
 baseURL = "http://gvisor.com"
 title = "张金栋的公开随笔"
 theme = "hugo-coder"
-languageCode = "en"
+languageCode = "eni-us"
 defaultContentLanguage = "en"
 paginate = 20
 pygmentsStyle = "bw"
@@ -10,13 +10,15 @@ pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
+# theme = "hyde"
+
 
 [params]
-author = "skipzhang"
+author = "Skipzhang"
 # license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "Skipzhang's personal website"
 keywords = "blog,developer,personal"
-info = ["深耕技术", ""]
+info = ["Tradeoff", ""]
 
 #avatarURL = "images/avatar.jpg"
 gravatar = "beordle@gmail.com"
