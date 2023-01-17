@@ -141,13 +141,13 @@ url = "https://github.com/beordle/"
 #weight = 5
 #url = "https://medium.com/@johndoe"
 
-#[[params.social]]
-#name = "RSS"
-#icon = "fa fa-2x fa-rss"
-#weight = 6
-#url = "https://myhugosite.com/index.xml"
-#rel = "alternate"
-#type = "application/rss+xml"
+[[params.social]]
+name = "RSS"
+icon = "fa fa-2x fa-rss"
+weight = 6
+url = "https://gvisor.com/index.xml"
+rel = "alternate"
+type = "application/rss+xml"
 
 [languages.en]
 languageName = ":uk:"
@@ -162,15 +162,15 @@ name = "Blog"
 weight = 2
 url = "posts/"
 
-[[languages.en.menu.main]]
-name = "Projects"
-weight = 3
-url = "projects/"
+#[[languages.en.menu.main]]
+#name = "Projects"
+#weight = 3
+#url = "projects/"
 
-[[languages.en.menu.main]]
-name = "Contact me"
-weight = 5
-url = "contact/"
+#[[languages.en.menu.main]]
+#name = "Contact me"
+#weight = 5
+#url = "contact/"
 
 #[languages.pt-br]
 #languageName = ":brazil:"
